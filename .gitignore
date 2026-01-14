@@ -1,0 +1,71 @@
+# =========================
+# Archivos de compilación
+# =========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# =========================
+# Reportes temporales (Allure / Karate / Maven)
+# =========================
+allure-results/
+allure-report/
+reports/
+surefire-reports/
+cucumber-reports/
+karate-output/
+karate.log
+karate-summary.html
+karate-summary.json
+
+# =========================
+# Configuración de IDEs
+# =========================
+.vscode/
+.idea/
+*.iml
+out/
+.project
+.classpath
+.settings/
+nbproject/private/
+build/
+
+# =========================
+# Sistema operativo (Windows/macOS)
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# =========================
+# Archivos temporales y logs
+# =========================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# =========================
+# Maven Wrapper
+# =========================
+.mvn/
+mvnw
+mvnw.cmd
+
+# =========================
+# Archivos sensibles
+# =========================
+.env
+*.key
+*.pem
+
+# =========================
+# Cobertura / Sonar
+# =========================
+jacoco.exec
+.sonar/
