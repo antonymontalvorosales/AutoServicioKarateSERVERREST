@@ -5,6 +5,12 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      repeat:
+        description: "Número de veces que quieres ejecutar el test"
+        required: false
+        default: "1"
 
 jobs:
   test:
@@ -23,8 +29,12 @@ jobs:
       - name: Instalar dependencias
         run: mvn install -DskipTests
 
-      - name: Ejecutar pruebas Karate
-        run: mvn clean test
+      - name: Ejecutar pruebas Karate n veces
+        run: |
+          for i in $(seq 1 ${{ github.event.inputs.repeat }}); do
+            echo "➡️ Ejecución número $i"
+            mvn clean test
+          done
 
       - name: Instalar Allure CLI
         run: npm install -g allure-commandline --save-dev
