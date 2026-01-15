@@ -1,5 +1,7 @@
 # SERVERREST-KARATE-API
 
+![CI Pipeline](https://github.com/antonymontalvorosales/AutoServicioKarateSERVERREST/actions/workflows/ci.yml/badge.svg)
+
 Proyecto de **pruebas automatizadas** para la API **Serverest**, desarrollado con **Karate DSL** y gestionado con **Maven**.  
 Incluye integración con **Allure** para generar reportes visuales de ejecución.
 
